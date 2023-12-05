@@ -19,7 +19,6 @@ public class GeneralApiController {
 
     @GetMapping("/general")
     public ObjectNode getRecyclingLocations() {
-
         return generalApiService.getRecyclingLocations();
     }
 
