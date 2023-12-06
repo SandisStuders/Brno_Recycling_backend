@@ -2,11 +2,15 @@ package com.recycleapp.backend.recyclinglocation;
 
 import com.recycleapp.backend.enums.WASTE_CATEGORIES;
 import com.recycleapp.backend.enums.WASTE_LOCATIONS;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 
 import java.util.ArrayList;
 
+@MappedSuperclass
 public class RecyclingLocation {
 
+    @Id
     private String locId = "";
     private String name;
     private ArrayList<WASTE_CATEGORIES> wasteCategories = new ArrayList<WASTE_CATEGORIES>();
