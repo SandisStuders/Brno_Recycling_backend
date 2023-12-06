@@ -21,8 +21,18 @@ public class RecyclingCenterService {
 
     public void testConnection() {
         System.out.println("Connection works!");
-        System.out.println("ALL centers: " + recyclingCenterRepository.findAll());
-//        System.out.println("All centers query: " + recyclingCenterRepository.findAllRecyclingCenters());
+
+//        RecyclingCenter recyclingCenter = new RecyclingCenter();
+//        recyclingCenter.setLocId("testId2");
+//        recyclingCenter.setName("testCenter2");
+//        recyclingCenter.setPhone("123");
+//        recyclingCenter.setOpeningHours("All day");
+//        recyclingCenter.setOwner("dad");
+//        recyclingCenter.setXLoc(3.55);
+//        recyclingCenter.setYLoc(4.55);
+//        recyclingCenterRepository.save(recyclingCenter);
+
+
     }
 
 }

@@ -14,11 +14,11 @@ public class RecyclingCenter extends RecyclingLocation {
     private String openingHours;
     private String phone;
 
-    RecyclingCenter() {
+    public RecyclingCenter() {
         super();
     }
 
-    RecyclingCenter(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
+    public RecyclingCenter(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
         this.setName(name);
         this.setLocationType(locationType);
         this.setXLoc(xLoc);

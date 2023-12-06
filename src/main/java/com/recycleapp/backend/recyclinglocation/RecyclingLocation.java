@@ -23,7 +23,7 @@ public class RecyclingLocation {
         // This is needed for Jackson
     }
 
-    RecyclingLocation(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
+    public RecyclingLocation(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
         this.name = name;
         this.locationType = locationType;
         this.xLoc = xLoc;

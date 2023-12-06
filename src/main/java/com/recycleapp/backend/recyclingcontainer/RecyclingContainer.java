@@ -16,11 +16,11 @@ public class RecyclingContainer extends RecyclingLocation {
     private WASTE_COLLECTION_FREQUENCY wasteCollectionFrequency;
     private ArrayList<WEEKDAYS> wasteCollectionDays;
 
-    RecyclingContainer() {
+    public RecyclingContainer() {
         super();
     }
 
-    RecyclingContainer(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
+    public RecyclingContainer(String name, WASTE_LOCATIONS locationType, double xLoc, double yLoc) {
         this.setName(name);
         this.setLocationType(locationType);
         this.setXLoc(xLoc);
