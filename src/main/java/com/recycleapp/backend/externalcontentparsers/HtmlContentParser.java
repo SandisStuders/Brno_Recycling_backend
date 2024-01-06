@@ -16,6 +16,8 @@ public class HtmlContentParser {
         ArrayList<String[]> lines = new ArrayList<>();
         String line;
 
+        System.out.println(filePath);
+
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(","); // Assumes the CSV is comma-delimited

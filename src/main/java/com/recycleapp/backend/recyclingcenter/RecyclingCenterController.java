@@ -1,13 +1,15 @@
 package com.recycleapp.backend.recyclingcenter;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+
 @RestController
-@RequestMapping(path="test")
+@RequestMapping(path="rec-center")
 public class RecyclingCenterController {
 
     private final RecyclingCenterService recyclingCenterService;
@@ -17,11 +19,8 @@ public class RecyclingCenterController {
         this.recyclingCenterService = recyclingCenterService;
     }
 
-
-    @GetMapping("/v1")
-    public String testController() {
-        recyclingCenterService.testConnection();
-        return "Heyo!";
+    @GetMapping("/update")
+    public String updateRecyclingCenterDatabase() throws URISyntaxException, IOException {
+        return recyclingCenterService.updateRecyclingCenters();
     }
-
 }
